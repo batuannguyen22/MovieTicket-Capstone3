@@ -84,9 +84,9 @@ const Login = () => {
           <NavLink to="/register" className={styles.nouser}>
             Bạn chưa có tài khoản? Đăng ký
           </NavLink>
-          <NavLink to="/" ref={loginRef} hidden>
+          {/* <NavLink to="/" ref={loginRef} hidden>
             backtohome
-          </NavLink>
+          </NavLink> */}
           ;
         </div>
       </div>
