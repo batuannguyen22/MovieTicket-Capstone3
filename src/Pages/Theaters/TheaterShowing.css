@@ -1,0 +1,10 @@
+.tabContentTheater{
+    padding: 0 255px;
+}
+
+@media screen and (max-width: 1280px)  
+{
+    .tabContentTheater{
+        padding: 0;
+    }
+}

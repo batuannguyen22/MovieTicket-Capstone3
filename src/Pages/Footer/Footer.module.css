@@ -1,0 +1,126 @@
+.footer{
+    background-color: #212121;
+    padding: 25px 248px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#9e9e9e;
+    font-size: 12px;
+}
+
+.footer a:hover{
+    color:#ffffff;
+}
+
+.footer h1{
+    color:#ffffff;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+.footer .col_2 h1{
+   visibility: hidden;
+}
+
+.logoOS{
+    display: flex;
+    align-items: center;
+}
+
+.apple_logo{
+    padding-right: 15px;
+}
+
+.apple_logo, .android_logo{
+    color:#9e9e9e;
+    font-size: 30px;
+}
+
+.apple_logo:hover, .android_logo:hover{
+    cursor: pointer;
+}
+
+.logoSocial{
+    display: flex;
+    align-items: center;
+}
+
+.fb_logo{
+    color:#9e9e9e;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.zalo_logo img{
+    width:100%;
+    height: 37px;
+    padding-top:7px;
+}
+
+.fb_logo, .zalo_logo{
+    cursor: pointer;
+}
+
+.row_2{
+    padding-top: 25px;
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.row_2 .middle{
+    color:#ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 45px;
+}
+
+.row_2 .right img{
+    width: 100%;
+    height: 45px;
+}
+
+.logo_cine{
+    display: flex;
+    align-items: center;
+}
+
+.logo_cine .logo img{
+    width: 100%;
+    height: 45px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.logo_cine .logo:hover img{
+    filter: grayscale(80%);
+}
+
+@media screen and (max-width: 1000px)  
+{
+    .footer{
+        padding: 25px 100px;
+    }
+    .row{
+        display: block;
+    }
+    .row_2 .right img{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+    .row_2 .middle{
+        font-size: 10px;
+        padding: 0 10px;
+    }
+}

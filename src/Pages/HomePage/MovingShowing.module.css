@@ -1,0 +1,234 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 75px 248px;
+}
+
+.col{
+    width: calc(100%/3);
+    padding: 0 45px;
+    margin-bottom: 10px;
+}
+
+.col:hover .buyTicket a,
+.col:hover .playButton{
+    visibility: visible;
+}
+
+.col:hover .moTa,
+.col:hover .movieName,
+.col:hover .logo{
+    visibility: hidden;
+}
+
+.col img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+}
+
+.col:hover img{
+    filter: drop-shadow(5px 10px 3px #fb4226);
+}
+
+.logo_movieName{
+    display: flex;
+    align-items: center;
+    height: 95px;
+}
+
+.movieName{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #000;
+    margin: 0;
+    visibility: visible;
+}
+
+.logo{
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #fb4226;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 4px;
+    visibility: visible;
+}
+
+.moTa{
+    color: #757575;
+    margin: 0 0 16px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    padding-top: 7px;
+    letter-spacing: 0.00735em;
+    height: 47px;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.details{
+    position: relative;
+}
+
+.buyTicket a{
+    color: #fff;
+    display: block;
+    padding: 20px 8px;
+    font-size: 18px;
+    background: linear-gradient(to left,#fb4226,#ce3017 100%);
+    text-align: center;
+    font-weight: 500;
+    border-radius: 4px;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    top:25px;
+    left: 0;
+    visibility: hidden;
+}
+
+.col .buyTicket a:hover{
+    background:#fb4226;
+}
+
+.playButton{
+    font-size: 50px;
+    position: absolute;
+    top: -200px;
+    left: 85px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.playButton a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.movie{
+    display: flex;
+    padding-top: 75px;
+    padding-left: 400px;
+}
+.movie1, .movie2, .movie3{
+    margin: 0 25px;
+    padding: 20px 35px;
+    border-radius: 6px;
+    color:#fff;
+    background-color: #fb4226;
+    font-weight: bold;
+}
+
+.movie1:hover, .movie2:hover, .movie3:hover{
+    background-color: #fff;
+    color: #fb4226;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 1280px){
+    .row{
+        padding: 75px 180px;
+    }
+    .movie{
+        padding-left: 235px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .row{
+        padding: 75px 135px;
+    }
+    .movie{
+        padding-left: 200px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .row{
+        padding: 75px 95px;
+    }
+    .movie{
+        padding-left: 150px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .row{
+        padding: 75px 25px;
+    }
+    .movie{
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 806px){
+    .row{
+        padding: 75px 0;
+    }
+    .movie{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 757px){
+    .movie{
+        flex-direction: row;
+        padding-left: 25px;
+    }
+    .movie1, .movie2, .movie3{
+        font-size: 10px;
+    }
+
+    .col img{
+        height: 200px;
+    }
+    .movieName{
+        font-size: 10px;
+    }
+    .col{
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .col img{
+        height: 150px;
+    }
+    .movie1, .movie2, .movie3{
+        padding: 20px 25px  ;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .movie{
+        padding-left: 35px;
+    }
+    .movie1, .movie2, .movie3{
+        font-size: 7px;
+        padding: 15px 15px;
+    }
+    .col{
+        width: 50%;
+    }
+    .col img{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .row{
+        padding: 25px;
+    }
+    .movie1, .movie2, .movie3{
+        padding: 10px 10px  ;
+    }
+    .col{
+        width: 100%;
+    }
+}

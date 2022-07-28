@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parentLogin{
+    background-image:url("/src/Assets/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.row{
+    left:30%;
+    position:absolute;
+    padding-top: 15px;
+    align-items: center;
+    background-color: #fff;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.logoLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px ;
+}
+
+.logoLogin .logo i{
+    font-size: 45px;
+    color: #fb4226;
+}
+
+.logoLogin .login{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin:0;
+}
+
+.info{
+    width: 75%;
+    height: 50px;
+    border: 1px solid #979797;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.info::placeholder{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.buttonLogin{
+    border: none;
+    border-radius: 7px;
+    width: 75%;
+    padding: 10px 25px;
+    font-size: 20px;
+    background-color: #fb4226;
+    color: #fff;
+}
+
+.noticeInput{
+  color:#fb4226;
+  transform: translate(-50%);
+}
+
+@media screen and (max-width: 400px)  
+{
+    .info{
+        padding-left: 0px;
+    }
+    .info::placeholder{
+        font-size: 12px;
+    }
+    .buttonLogin{
+        margin-top: 15px;
+        font-size: 10px;
+    }
+}

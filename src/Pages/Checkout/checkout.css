@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.chair{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:5px;
+    background-color: rgb(123, 122, 122);
+}
+
+.bookedChair{
+    background-color: rgb(232,76,76);
+    cursor: no-drop;
+}
+
+.bookingChair{
+    background-color: rgb(18,176,18);
+}
+
+.vipChair{
+    background-color: rgb(228,74,8);
+}
+
+.yourBookedChair{
+    background-color: rgb(246, 246, 246);
+    box-shadow: -1px 2px 18px -6px orange;
+    color: orange !important;
+    border: 2px solid orange;
+}
+
+.anticon{
+    vertical-align: -0.03rem !important;
+}

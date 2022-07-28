@@ -1,0 +1,61 @@
+.hinhAnh{
+    width: 50%;
+    height: 350px;
+}
+
+.moTa{
+    margin-left: 10%;
+}
+
+.tenPhim{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.moTaPhim{
+    color: #909090;
+}
+
+.rate{
+    text-align: center;
+}
+
+.danhGia{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px)  
+{
+    .hinhAnh{
+        height: 250px;
+    }
+    .tenPhim{
+        font-size: 15px;
+    }
+    .moTa{
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .moTaPhim{
+        font-size: 11px;
+    }
+    .rate{
+        display: none;
+    }
+    .danhGia{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 476px)  
+{
+    .hinhAnh{
+        margin-top: 55px;
+        height: 165px;
+    }
+    .danhGia{
+        margin-top: 80px;
+    }
+}
