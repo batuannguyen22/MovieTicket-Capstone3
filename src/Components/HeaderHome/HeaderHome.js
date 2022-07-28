@@ -3,7 +3,8 @@ import logo from "../../Assets/img/logo.png";
 import style from "./HeaderHome.module.css";
 import { NavLink } from "react-router-dom";
 import { useSelector,useDispatch } from "react-redux";
-import {signOut} from '../../Slices/userLogin'
+import {signOut} from '../../Slices/userLogin';
+import store from '../../configStore';
 
 const HeaderHome = () => {
   const dispatch = useDispatch();

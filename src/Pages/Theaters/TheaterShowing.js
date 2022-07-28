@@ -4,11 +4,11 @@ import {NavLink} from 'react-router-dom';
 import { Tabs } from "antd";
 import moment from 'moment';
 import React, { useState } from "react";
-const { TabPane } = Tabs;
 import store from "../../configStore";
 import { getMovieTheater } from "../../Slices/theater";
 import "antd/dist/antd.min.css";
 import cssStyles from "./TheaterShowing.css";
+const { TabPane } = Tabs;
 
 const TheaterShowing = () => {
   const [tabPosition, setTabPosition] = useState("left");

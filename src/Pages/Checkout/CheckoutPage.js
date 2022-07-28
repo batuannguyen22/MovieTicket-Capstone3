@@ -15,6 +15,7 @@ import checkoutCss from "./checkout.css";
 import _ from "lodash";
 import { CloseOutlined, UserOutlined, CheckOutlined } from "@ant-design/icons";
 import { Tabs } from "antd";
+import store from '../../configStore';
 
 const CheckoutPage = () => {
   const { id } = useParams();

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Tabs, Rate } from "antd";
-const { TabPane } = Tabs;
+import store from "../../configStore";
 import { NavLink, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getMovieTime } from "../../Slices/movieDetails";
@@ -8,6 +8,7 @@ import moment from "moment";
 import "antd/dist/antd.min.css";
 import circleCss from "../../Assets/styles/circle.css";
 import style from "./detail.module.css";
+const { TabPane } = Tabs;
 
 const Detail = () => {
   const { id } = useParams();
