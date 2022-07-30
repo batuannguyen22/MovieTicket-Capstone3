@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import styles from "./Login.module.css";
 import { useForm } from "react-hook-form";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { getUserLogin } from "../../Slices/userLogin";
 import { useDispatch } from "react-redux";
 
 const Login = () => {
-  const loginRef = useRef();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const {
     register,
@@ -77,7 +77,12 @@ const Login = () => {
           )}
           <button
             className={styles.buttonLogin}
-            onClick={() => loginRef.current.click()}
+            onClick= {(e) =>{
+              setTimeout(()=>{
+                navigate("/")
+              },2500)
+              
+            }}
           >
             Đăng nhập
           </button>
